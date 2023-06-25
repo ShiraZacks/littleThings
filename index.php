@@ -9,6 +9,6 @@
 </head>
 
 <body>
-    
+    <h2>This is a parked page for the upcoming website. WOohoo!! 🥳</h2>
 </body>
 </html>
