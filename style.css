@@ -20,12 +20,12 @@ img {
 	height: 20vh;
 }
 
-/*topBar*/
+/* topBar */
 .topBar {
 	z-index: 1;
 	top: 0px;
 	left: 0pt;
-	display: inline-block;
+	/* display: inline-block; */
 	overflow: clip;
 	width: 100%;
 	height: 20vh;
@@ -41,15 +41,9 @@ img {
 }
 
 /*buttons on menu*/
-.buttons {
-	vertical-align: middle;
-	line-height: 60px;
-	color: white !important;
+img.menuButton {
 	cursor: pointer;
-	word-wrap: normal;
-	text-align: center;
-	padding: 30px;
-	text-decoration: none !important;
+	height: 17vh;
 }
 
 /*hover button on menu full screen*/
@@ -131,6 +125,6 @@ a.button:hover {
 	border-bottom: 3px solid white;
 }
 
-.logo {
+*/ .logo {
 	height: 500px;
 }
