@@ -16,7 +16,6 @@
 <?php include "header.php" ?>
 
 <body>
-
     <h2>This is a parked page for the upcoming website. Woohoo!! 🥳</h2>
 </body>
 

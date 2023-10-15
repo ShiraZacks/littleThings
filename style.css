@@ -8,6 +8,7 @@
 	/* light, shadows */
 	--color3: #6792BB;
 	--color4: ;
+	--topBarHeight: 15vh;
 }
 
 html,
@@ -17,7 +18,15 @@ body {
 }
 
 img {
-	height: 20vh;
+	height: var(--topBarHeight);
+}
+
+.logo {
+	display: inline-block;
+	position: absolute;
+	height: var(--topBarHeight);
+	line-height: var(--topBarHeight);
+	font-size: x-large;
 }
 
 /* topBar */
@@ -25,11 +34,8 @@ img {
 	z-index: 1;
 	top: 0px;
 	left: 0pt;
-	/* display: inline-block; */
-	overflow: clip;
 	width: 100%;
-	height: 20vh;
-	white-space: normal;
+	height: var(--topBarHeight);
 	background-color: var(--color1);
 	position: fixed;
 	box-shadow: 0 8px 16px 0 var(--color2),
@@ -37,26 +43,26 @@ img {
 }
 
 .under_the_menu {
-	height: 25vh;
+	height: 20vh;
 }
 
 /*buttons on menu*/
-img.menuButton {
+.menuButton {
 	cursor: pointer;
-	height: 17vh;
+	height: var(--topBarHeight);
 }
 
 /*hover button on menu full screen*/
-a.buttons:hover {
+/* a.buttons:hover {
 	color: #f44336 !important;
 	background-color: white;
 	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
 		0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	text-shadow: none !important;
-}
+} */
 
 /*STUFF FOR LITTLE SCREEN*/
-.smaller {
+/* .smaller {
 	z-index: 1;
 	display: none;
 	top: 10px;
@@ -68,7 +74,7 @@ ul {
 
 li {
 	margin-bottom: 0px;
-}
+} */
 
 /*responsive screen size*/
 @media only screen and (max-width: 992px) {
@@ -97,8 +103,20 @@ li {
 	float: none;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
 /*small menu buttons, and regular buttons */
-.button {
+/* .button {
 	background-color: #f44336;
 	color: white;
 	border-right: 3px solid white;
@@ -119,12 +137,8 @@ a.button:hover {
 	color: #f44336;
 	text-shadow: none !important;
 	border-color: #f44336;
-}
+} */
 
 .bottom {
 	border-bottom: 3px solid white;
-}
-
-*/ .logo {
-	height: 500px;
 }
