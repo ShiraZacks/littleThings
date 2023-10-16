@@ -16,6 +16,61 @@
 <?php include "header.php" ?>
 
 <body>
+    <div class="centerText">
+        <h1 class="logo fancyUnderline">LITTLE THINGS IN LIFE</h1>
+    </div>
+
+
+    <h2>This is a parked page for the upcoming website. Woohoo!! 🥳</h2>
+    <h2>This is a parked page for the upcoming website. Woohoo!! 🥳</h2>
+    <h2>This is a parked page for the upcoming website. Woohoo!! 🥳</h2>
+    <h2>This is a parked page for the upcoming website. Woohoo!! 🥳</h2>
+    <h2>This is a parked page for the upcoming website. Woohoo!! 🥳</h2>
+    <h2>This is a parked page for the upcoming website. Woohoo!! 🥳</h2>
+    <h2>This is a parked page for the upcoming website. Woohoo!! 🥳</h2>
+    <h2>This is a parked page for the upcoming website. Woohoo!! 🥳</h2>
+    <h2>This is a parked page for the upcoming website. Woohoo!! 🥳</h2>
+    <h2>This is a parked page for the upcoming website. Woohoo!! 🥳</h2>
+    <h2>This is a parked page for the upcoming website. Woohoo!! 🥳</h2>
+    <h2>This is a parked page for the upcoming website. Woohoo!! 🥳</h2>
+    <h2>This is a parked page for the upcoming website. Woohoo!! 🥳</h2>
+    <h2>This is a parked page for the upcoming website. Woohoo!! 🥳</h2>
+    <h2>This is a parked page for the upcoming website. Woohoo!! 🥳</h2>
+    <h2>This is a parked page for the upcoming website. Woohoo!! 🥳</h2>
+    <h2>This is a parked page for the upcoming website. Woohoo!! 🥳</h2>
+    <h2>This is a parked page for the upcoming website. Woohoo!! 🥳</h2>
+    <h2>This is a parked page for the upcoming website. Woohoo!! 🥳</h2>
+    <h2>This is a parked page for the upcoming website. Woohoo!! 🥳</h2>
+    <h2>This is a parked page for the upcoming website. Woohoo!! 🥳</h2>
+    <h2>This is a parked page for the upcoming website. Woohoo!! 🥳</h2>
+    <h2>This is a parked page for the upcoming website. Woohoo!! 🥳</h2>
+    <h2>This is a parked page for the upcoming website. Woohoo!! 🥳</h2>
+    <h2>This is a parked page for the upcoming website. Woohoo!! 🥳</h2>
+    <h2>This is a parked page for the upcoming website. Woohoo!! 🥳</h2>
+    <h2>This is a parked page for the upcoming website. Woohoo!! 🥳</h2>
+    <h2>This is a parked page for the upcoming website. Woohoo!! 🥳</h2>
+    <h2>This is a parked page for the upcoming website. Woohoo!! 🥳</h2>
+    <h2>This is a parked page for the upcoming website. Woohoo!! 🥳</h2>
+    <h2>This is a parked page for the upcoming website. Woohoo!! 🥳</h2>
+    <h2>This is a parked page for the upcoming website. Woohoo!! 🥳</h2>
+    <h2>This is a parked page for the upcoming website. Woohoo!! 🥳</h2>
+    <h2>This is a parked page for the upcoming website. Woohoo!! 🥳</h2>
+    <h2>This is a parked page for the upcoming website. Woohoo!! 🥳</h2>
+    <h2>This is a parked page for the upcoming website. Woohoo!! 🥳</h2>
+    <h2>This is a parked page for the upcoming website. Woohoo!! 🥳</h2>
+    <h2>This is a parked page for the upcoming website. Woohoo!! 🥳</h2>
+    <h2>This is a parked page for the upcoming website. Woohoo!! 🥳</h2>
+    <h2>This is a parked page for the upcoming website. Woohoo!! 🥳</h2>
+    <h2>This is a parked page for the upcoming website. Woohoo!! 🥳</h2>
+    <h2>This is a parked page for the upcoming website. Woohoo!! 🥳</h2>
+    <h2>This is a parked page for the upcoming website. Woohoo!! 🥳</h2>
+    <h2>This is a parked page for the upcoming website. Woohoo!! 🥳</h2>
+    <h2>This is a parked page for the upcoming website. Woohoo!! 🥳</h2>
+    <h2>This is a parked page for the upcoming website. Woohoo!! 🥳</h2>
+    <h2>This is a parked page for the upcoming website. Woohoo!! 🥳</h2>
+    <h2>This is a parked page for the upcoming website. Woohoo!! 🥳</h2>
+    <h2>This is a parked page for the upcoming website. Woohoo!! 🥳</h2>
+    <h2>This is a parked page for the upcoming website. Woohoo!! 🥳</h2>
     <h2>This is a parked page for the upcoming website. Woohoo!! 🥳</h2>
 </body>
 

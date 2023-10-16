@@ -7,26 +7,18 @@
 	--color2: #10234E;
 	/* light, shadows */
 	--color3: #6792BB;
-	--color4: ;
+	/* light, transparent, highlights */
+	--color4: #6792bb81;
 	--topBarHeight: 15vh;
 }
 
 html,
 body {
 	font-family: 'Della Respira', serif;
+	background-color: var(--color1);
 	overflow-x: hidden;
-}
-
-img {
-	height: var(--topBarHeight);
-}
-
-.logo {
-	display: inline-block;
-	position: absolute;
-	height: var(--topBarHeight);
-	line-height: var(--topBarHeight);
-	font-size: x-large;
+	color: var(--color2) !important;
+	/* text-align: center; */
 }
 
 /* topBar */
@@ -38,8 +30,35 @@ img {
 	height: var(--topBarHeight);
 	background-color: var(--color1);
 	position: fixed;
-	box-shadow: 0 8px 16px 0 var(--color2),
-		0 6px 20px 0 var(--color2);
+	box-shadow: 0 8px 10px 0 var(--color2),
+		0 6px 15px 0 var(--color2);
+
+}
+
+.container {
+	display: flex;
+	justify-content: flex-start;
+}
+
+img {
+	height: var(--topBarHeight);
+}
+
+.logo {
+	height: var(--topBarHeight);
+	line-height: var(--topBarHeight);
+	font-size: x-large;
+	width: 50vw;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.fancyUnderline {
+	text-decoration: none;
+	background-image: url("underline.png");
+	background-position: 0 3em;
+	background-size: 15px;
+	background-repeat: repeat-x;
 }
 
 .under_the_menu {
@@ -50,7 +69,44 @@ img {
 .menuButton {
 	cursor: pointer;
 	height: var(--topBarHeight);
+	line-height: var(--topBarHeight);
+	padding-right: 15px;
+	padding-left: 15px;
 }
+
+a {
+	color: var(--color2);
+	text-decoration: none;
+	position: relative;
+}
+
+a:hover {}
+
+a::before {
+	/* makes the "underline" behind the text */
+	z-index: -1;
+	content: '';
+	position: absolute;
+	top: 50%;
+	right: 0;
+	width: 0;
+	height: 10px;
+	/*color of the underline, make it transparent*/
+	background-color: var(--color4);
+	transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+@media (hover: hover) and (pointer: fine) {
+	a:hover::before {
+		left: 0;
+		right: auto;
+		width: 100%;
+	}
+}
+
+a:active {}
+
+a:visited {}
 
 /*hover button on menu full screen*/
 /* a.buttons:hover {
@@ -61,29 +117,26 @@ img {
 	text-shadow: none !important;
 } */
 
-/*STUFF FOR LITTLE SCREEN*/
-/* .smaller {
-	z-index: 1;
-	display: none;
-	top: 10px;
-}
 
-ul {
-	list-style-type: none;
-}
-
-li {
-	margin-bottom: 0px;
-} */
 
 /*responsive screen size*/
 @media only screen and (max-width: 992px) {
-	[class*="buttons"] {
+	.topBar {
+		height: fit-content;
+		position: static;
+	}
+
+	.under_the_menu {
 		display: none;
 	}
 
-	[class*="smaller"] {
-		display: block;
+	#logo_flower {
+		display: none;
+	}
+
+	.container {
+		justify-content: center;
+		flex-wrap: wrap;
 	}
 }
 
@@ -103,16 +156,9 @@ li {
 	float: none;
 }
 
-
-
-
-
-
-
-
-
-
-
+.centerText {
+	text-align: center;
+}
 
 
 /*small menu buttons, and regular buttons */
