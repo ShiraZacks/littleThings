@@ -12,13 +12,21 @@
 	--topBarHeight: 15vh;
 }
 
+/*
+* fonts:
+* font-family: 'Della Respira', serif; basic body font
+* font-family: 'Fondamento', cursive; calligraphy not cursive
+* font-family: 'Macondo', cursive; handwriting fancyish
+* font-family: 'Satisfy', cursive; handwriting cursive
+
+*/
+
 html,
 body {
 	font-family: 'Della Respira', serif;
 	background-color: var(--color1);
 	overflow-x: hidden;
 	color: var(--color2) !important;
-	/* text-align: center; */
 }
 
 /* topBar */
@@ -45,21 +53,20 @@ img {
 }
 
 .logo {
-	height: var(--topBarHeight);
 	line-height: var(--topBarHeight);
-	font-size: x-large;
-	width: 50vw;
+	font-size: 5vh;
+	width: fit-content;
 	margin-left: auto;
 	margin-right: auto;
 }
 
-.fancyUnderline {
+/* .fancyUnderline {
 	text-decoration: none;
 	background-image: url("underline.png");
-	background-position: 0 3em;
+	background-position: 0 2em;
 	background-size: 15px;
 	background-repeat: repeat-x;
-}
+} */
 
 .under_the_menu {
 	height: 20vh;
@@ -70,8 +77,7 @@ img {
 	cursor: pointer;
 	height: var(--topBarHeight);
 	line-height: var(--topBarHeight);
-	padding-right: 15px;
-	padding-left: 15px;
+
 }
 
 a {
@@ -80,27 +86,24 @@ a {
 	position: relative;
 }
 
-a:hover {}
-
 a::before {
 	/* makes the "underline" behind the text */
 	z-index: -1;
 	content: '';
 	position: absolute;
 	top: 50%;
-	right: 0;
+	right: 25%;
 	width: 0;
 	height: 10px;
-	/*color of the underline, make it transparent*/
 	background-color: var(--color4);
 	transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
 @media (hover: hover) and (pointer: fine) {
 	a:hover::before {
-		left: 0;
-		right: auto;
-		width: 100%;
+		left: 25%;
+		right: 25%;
+		width: 50%;
 	}
 }
 
@@ -108,16 +111,16 @@ a:active {}
 
 a:visited {}
 
-/*hover button on menu full screen*/
-/* a.buttons:hover {
-	color: #f44336 !important;
-	background-color: white;
-	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
-		0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	text-shadow: none !important;
-} */
+.spacerSpan {
+	height: var(--topBarHeight);
+	line-height: var(--topBarHeight);
+	margin-right: 25px;
+	margin-left: 25px;
+}
 
-
+.centerText {
+	text-align: center;
+}
 
 /*responsive screen size*/
 @media only screen and (max-width: 992px) {
@@ -138,53 +141,4 @@ a:visited {}
 		justify-content: center;
 		flex-wrap: wrap;
 	}
-}
-
-/*little screen menu*/
-.hide {
-	display: none;
-}
-
-.show {
-	margin-top: 50px;
-	position: fixed;
-	display: block;
-	z-index: 1;
-}
-
-.titanic {
-	float: none;
-}
-
-.centerText {
-	text-align: center;
-}
-
-
-/*small menu buttons, and regular buttons */
-/* .button {
-	background-color: #f44336;
-	color: white;
-	border-right: 3px solid white;
-	border-left: 3px solid white;
-	cursor: pointer;
-	display: inline-block;
-	width: 100%;
-	text-align: center;
-	align-self: right;
-	text-decoration: none !important;
-	padding: 15px;
-}
-
-a.button:hover {
-	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
-		0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	background-color: white;
-	color: #f44336;
-	text-shadow: none !important;
-	border-color: #f44336;
-} */
-
-.bottom {
-	border-bottom: 3px solid white;
 }
