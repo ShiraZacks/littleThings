@@ -9,6 +9,7 @@
 	--color3: #6792BB;
 	/* light, transparent, highlights */
 	--color4: #6792bb81;
+	/* height of the navbar in webpage mode */
 	--topBarHeight: 15vh;
 }
 
@@ -25,27 +26,27 @@ html,
 body {
 	font-family: 'Della Respira', serif;
 	background-color: var(--color1);
-	overflow-x: hidden;
+	overflow-x: clip;
 	color: var(--color2) !important;
 }
 
 /* topBar */
-.topBar {
-	z-index: 1;
+.top {
 	top: 0px;
+	position: sticky;
+	z-index: 1;
 	left: 0pt;
 	width: 100%;
 	height: var(--topBarHeight);
 	background-color: var(--color1);
-	position: fixed;
 	box-shadow: 0 8px 10px 0 var(--color2),
 		0 6px 15px 0 var(--color2);
-
 }
 
 .container {
 	display: flex;
 	justify-content: flex-start;
+	flex-direction: row;
 }
 
 img {
@@ -68,15 +69,12 @@ img {
 	background-repeat: repeat-x;
 } */
 
-.under_the_menu {
-	height: 20vh;
-}
-
 /*buttons on menu*/
 .menuButton {
+	margin-top: auto;
+	margin-bottom: auto;
 	cursor: pointer;
-	height: var(--topBarHeight);
-	line-height: var(--topBarHeight);
+	line-height: 5vh;
 
 }
 
@@ -112,8 +110,6 @@ a:active {}
 a:visited {}
 
 .spacerSpan {
-	height: var(--topBarHeight);
-	line-height: var(--topBarHeight);
 	margin-right: 25px;
 	margin-left: 25px;
 }
@@ -124,13 +120,14 @@ a:visited {}
 
 /*responsive screen size*/
 @media only screen and (max-width: 992px) {
-	.topBar {
-		height: fit-content;
-		position: static;
+	.logo {
+		font-size: xx-large;
 	}
+}
 
-	.under_the_menu {
-		display: none;
+@media only screen and (max-width: 700px) {
+	.top {
+		height: fit-content;
 	}
 
 	#logo_flower {
@@ -141,4 +138,11 @@ a:visited {}
 		justify-content: center;
 		flex-wrap: wrap;
 	}
+}
+
+.sectionText {
+	border: 2px solid var(--color3);
+	margin: 5vh 10vw;
+	width: 30%;
+	border-radius: 25px;
 }
