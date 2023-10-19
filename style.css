@@ -30,18 +30,6 @@ body {
 	color: var(--color2) !important;
 }
 
-/* topBar */
-.top {
-	top: 0px;
-	position: sticky;
-	z-index: 1;
-	left: 0pt;
-	width: 100%;
-	height: var(--topBarHeight);
-	background-color: var(--color1);
-	box-shadow: 0 8px 10px 0 var(--color2),
-		0 6px 15px 0 var(--color2);
-}
 
 .container {
 	display: flex;
@@ -68,15 +56,6 @@ img {
 	background-size: 15px;
 	background-repeat: repeat-x;
 } */
-
-/*buttons on menu*/
-.menuButton {
-	margin-top: auto;
-	margin-bottom: auto;
-	cursor: pointer;
-	line-height: 5vh;
-
-}
 
 a {
 	color: var(--color2);
@@ -105,9 +84,9 @@ a::before {
 	}
 }
 
-a:active {}
+/* a:active {}
 
-a:visited {}
+a:visited {} */
 
 .spacerSpan {
 	margin-right: 25px;
@@ -123,16 +102,6 @@ a:visited {}
 	.logo {
 		font-size: xx-large;
 	}
-}
-
-@media only screen and (max-width: 700px) {
-	.top {
-		height: fit-content;
-	}
-
-	#logo_flower {
-		display: none;
-	}
 
 	.container {
 		justify-content: center;
@@ -142,7 +111,9 @@ a:visited {}
 
 .sectionText {
 	border: 2px solid var(--color3);
-	margin: 5vh 10vw;
-	width: 30%;
+	margin: 5vh 5vw;
 	border-radius: 25px;
+	padding: 15px;
+	box-shadow: 0 4px 8px 0 var(--color2), 0 6px 20px var(--color2);
+	width: 40%;
 }

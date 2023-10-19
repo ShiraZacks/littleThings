@@ -13,4 +13,10 @@
     <script type="text/javascript" charset="utf-8" src="script.js?<?= time() ?>"></script>
     <link rel="icon" type="image/png" href="happiness.png">
 </head>
-<?php include "header.php" ?>
+
+<body>
+    <div>
+        <h1>Today's little thing to appreciate is...</h1>
+        <h3><?php ?></h3>
+    </div>
+</body>
