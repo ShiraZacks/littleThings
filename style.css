@@ -6,11 +6,9 @@
 	/* dark, text/border */
 	--color2: #10234E;
 	/* light, shadows */
-	--color3: #6792BB;
+	--color3: #6f98a1;
 	/* light, transparent, highlights */
-	--color4: #6792bb81;
-	/* height of the navbar in webpage mode */
-	--topBarHeight: 15vh;
+	--color4: #6f98a17e;
 }
 
 /*
@@ -37,8 +35,11 @@ body {
 	flex-direction: row;
 }
 
-img {
-	height: var(--topBarHeight);
+img.bottomBorder {
+	width: 20vw;
+	height: 20vh;
+	object-fit: cover;
+
 }
 
 .logo {
@@ -110,10 +111,18 @@ a:visited {} */
 }
 
 .sectionText {
-	border: 2px solid var(--color3);
+	border: 0 solid;
 	margin: 5vh 5vw;
 	border-radius: 25px;
 	padding: 15px;
 	box-shadow: 0 4px 8px 0 var(--color2), 0 6px 20px var(--color2);
 	width: 40%;
+}
+
+.sectionText2 {
+	border: 5px solid var(--color3);
+	margin: 5vh 5vw;
+	border-radius: 25px;
+	padding: 15px;
+	width: 70%;
 }
