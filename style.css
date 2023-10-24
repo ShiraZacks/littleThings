@@ -6,9 +6,9 @@
 	/* dark, text/border */
 	--color2: #10234E;
 	/* light, shadows */
-	--color3: #6f98a1;
+	--color3: #6f9aa6;
 	/* light, transparent, highlights */
-	--color4: #6f98a17e;
+	--color4: #6f9aa67f;
 }
 
 /*
@@ -112,7 +112,7 @@ a:visited {} */
 
 .sectionText {
 	border: 0 solid;
-	margin: 5vh 5vw;
+	margin: 5vh auto;
 	border-radius: 25px;
 	padding: 15px;
 	box-shadow: 0 4px 8px 0 var(--color2), 0 6px 20px var(--color2);
@@ -121,8 +121,14 @@ a:visited {} */
 
 .sectionText2 {
 	border: 5px solid var(--color3);
-	margin: 5vh 5vw;
+	margin: 10px auto;
 	border-radius: 25px;
+	padding: 15px;
+	width: 70%;
+}
+
+.sectionText3 {
+	margin: 10px auto;
 	padding: 15px;
 	width: 70%;
 }

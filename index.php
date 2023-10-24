@@ -10,26 +10,33 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Della+Respira&family=Fondamento&family=Macondo&family=Satisfy&display=swap" rel="stylesheet">
     <script defer type="text/javascript" charset="utf-8" src="script.js?<?= time() ?>"></script>
-    <link rel="icon" type="image/png" href="happiness.png">
+    <link rel="icon" type="image/png" href="icons/happiness.png">
 </head>
 
-<body>
-    <div class="centerText">
+<body class="centerText">
+    <div>
         <h1 class="logo"><span class="spacerSpan">〖</span>LITTLE THINGS IN LIFE<span class="spacerSpan">〗</span></h1>
+        <img class="bottomBorder" src="icons/flower_7.png">
+    </div>
+
+    <h3 class="sectionText3">In our fast-paced and busy world, it's easy to overlook the small moments that bring us joy and happiness.</h3>
+    <div class="sectionText2 centerText">
+        <h2>We believe that by taking the time to appreciate and savor the LITTLE THINGS IN LIFE, we can enhance our overall well-being
+            and find greater fulfillment in our day-to-day living.</h2>
+    </div>
+    <h3 class="sectionText3">At LITTLE THINGS IN LIFE, we invite you to slow down, pause, and discover the beauty in the ordinary.
+        Together, let's celebrate the beauty of the little things and live a more joyful and fulfilling life.
+    </h3>
+
+    <div class="container">
+        <div class="sectionText">
+            <h4>Today's Positive Quote</h4>
+        </div>
     </div>
 
     <div class="container">
         <div class="sectionText">
-            <h4>This is text that I am using to hold the place so I can style how the section should
-                look before I need to fill it in with the actual content</h4>
-        </div>
-
-        <div class="sectionText">
-            <h4>Today's Positive Quote</h4>
-        </div>
-
-        <div class="sectionText">
-            <h4>life is made up of countless small moments that often go unnoticed</h4>
+            <h4>Life is made up of countless small moments that often hold the most significance.</h4>
         </div>
 
         <div class="sectionText">
@@ -39,3 +46,9 @@
 </body>
 
 </html>
+
+
+<?php
+$dayOfYear = date("z") + 1;
+
+?>
