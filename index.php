@@ -13,42 +13,47 @@
     <link rel="icon" type="image/png" href="icons/happiness.png">
 </head>
 
+<?php
+$servername = 'localhost';
+$username = 'root';
+$password = '';
+$DBName = 'littlethingsinlife';
+$conn = mysqli_connect($servername, $username, $password, $DBName);
+if (mysqli_connect_errno()) {
+    echo "Something went wrong... Please contact me to let me know you see this message!! 10 points if you are the first one!" . mysqli_connect_error();
+    exit();
+}
+$grabQuote = mysqli_query($conn, 'SELECT `quote` FROM `quotes` WHERE `day` = DAYOFYEAR(CURRENT_DATE())') or die();
+$quote = mysqli_fetch_array($grabQuote);
+$grabThing = mysqli_query($conn, 'SELECT `thing` FROM `things` WHERE `day` = DAYOFYEAR(CURRENT_DATE())') or die();
+$thing = mysqli_fetch_array($grabThing);
+?>
+
 <body class="centerText">
-    <div>
-        <h1 class="logo"><span class="spacerSpan">〖</span>LITTLE THINGS IN LIFE<span class="spacerSpan">〗</span></h1>
+    <div class="sectionTextDark">
+        <h1 class="logo highlight"><span class="spacerSpan">〖</span>LITTLE THINGS IN LIFE<span class="spacerSpan">〗</span></h1>
         <img class="bottomBorder" src="icons/flower_7.png">
     </div>
 
-    <h3 class="sectionText3">In our fast-paced and busy world, it's easy to overlook the small moments that bring us joy and happiness.</h3>
-    <div class="sectionText2 centerText">
-        <h2>We believe that by taking the time to appreciate and savor the LITTLE THINGS IN LIFE, we can enhance our overall well-being
-            and find greater fulfillment in our day-to-day living.</h2>
-    </div>
-    <h3 class="sectionText3">At LITTLE THINGS IN LIFE, we invite you to slow down, pause, and discover the beauty in the ordinary.
-        Together, let's celebrate the beauty of the little things and live a more joyful and fulfilling life.
-    </h3>
-
-    <div class="container">
-        <div class="sectionText">
-            <h4>Today's Positive Quote</h4>
-        </div>
+    <div class=" sectionText3">
+        <h2>In our fast-paced and busy world, it's easy to overlook the small moments that bring us joy and happiness.</h2>
+        <h2>Take the time to notice and appreciate the little things in life!</h2>
+        <h2>Check back every day for a new idea and positive saying, and feel free to <a href="addLittleThing.php">share</a> your own bits of happiness.</h2>
     </div>
 
-    <div class="container">
-        <div class="sectionText">
-            <h4>Life is made up of countless small moments that often hold the most significance.</h4>
-        </div>
-
-        <div class="sectionText">
-            <h4>placeholder</h4>
-        </div>
+    <div class="sectionTextDark">
+        <h3>Today, remember to appreciate</h3>
+        <h4><?php print $thing['thing']; ?></h4>
     </div>
+
+    <div class="sectionText3">
+        <h3 class="quoteTitle">Today's Positive Quote</h3>
+        <h4><?php print $quote['quote']; ?></h4>
+    </div>
+
+    <footer class="sectionTextDark">
+        <p><a class="light" href="contact.php">Contact me</a> <a class="light" href="addLittleThing.php">Add to our little things list</a> &copy; <?php echo date("Y"); ?> Little Things In Life</p>
+    </footer>
 </body>
 
 </html>
-
-
-<?php
-$dayOfYear = date("z") + 1;
-
-?>

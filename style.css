@@ -50,44 +50,33 @@ img.bottomBorder {
 	margin-right: auto;
 }
 
-/* .fancyUnderline {
-	text-decoration: none;
-	background-image: url("underline.png");
-	background-position: 0 2em;
-	background-size: 15px;
-	background-repeat: repeat-x;
-} */
-
 a {
-	color: var(--color2);
+	text-decoration: underline solid;
+	color: var(--color2) !important;
+	padding: 5px;
+}
+
+a:hover {
+	background-color: var(--color3);
 	text-decoration: none;
-	position: relative;
+	border-radius: 25px;
+	transition: .2s;
+
 }
 
-a::before {
-	/* makes the "underline" behind the text */
-	z-index: -1;
-	content: '';
-	position: absolute;
-	top: 50%;
-	right: 25%;
-	width: 0;
-	height: 10px;
-	background-color: var(--color4);
-	transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+a.light {
+	text-decoration: underline solid;
+	color: var(--color2) !important;
+	padding: 5px;
 }
 
-@media (hover: hover) and (pointer: fine) {
-	a:hover::before {
-		left: 25%;
-		right: 25%;
-		width: 50%;
-	}
+a.light:hover {
+	background-color: var(--color1);
+	text-decoration: none;
+	border-radius: 25px;
+	transition: .2s;
+
 }
-
-/* a:active {}
-
-a:visited {} */
 
 .spacerSpan {
 	margin-right: 25px;
@@ -131,4 +120,14 @@ a:visited {} */
 	margin: 10px auto;
 	padding: 15px;
 	width: 70%;
+}
+
+.sectionTextDark {
+	background-color: var(--color3);
+	border-bottom: 5px solid var(--color2);
+	border-top: 5px solid var(--color2);
+}
+
+.quoteTitle {
+	text-decoration: underline double;
 }
