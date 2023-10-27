@@ -14,7 +14,10 @@
 </head>
 
 <body>
-    <div class='form' autocomplete="off">
+    <img class="sideRight" src="icons/flower_1.png">
+    <img class="sideLeft" src="icons/flower_1.png">
+
+    <div class='form'>
         <?php
 
         $errors = [];
@@ -41,7 +44,7 @@
 
             if (empty($errors)) {
                 $toEmail = 'hello@littlethingsinlife.org';
-                $emailSubject = 'from LittleThingsInLife';
+                $emailSubject = 'LittleThingsInLife';
                 $headers = ['From' => $email, 'Reply-To' => $email, 'Content-type' => 'text/html; charset=utf-8'];
                 $bodyParagraphs = ["Name: {$name}", "Email: {$email}", "Message:", $message];
                 $body = join(PHP_EOL, $bodyParagraphs);
@@ -60,24 +63,20 @@
 
         ?>
 
-        <form method="post" id="contact-form">
-            <h2>Contact me!</h2>
-            <?php echo ((!empty($errorMessage)) ? $errorMessage : '') ?>
-            <p>
-                <label class="formLabel">Name:</label>
-                <input name="name" type="text" class="formInput" />
-            </p>
-            <p>
-                <label class="formLabel">Email Address:</label>
-                <input name="email" type="text" class="formInput" />
-            </p>
-            <p>
-                <label class="formLabel">Message:</label>
-                <textarea name="message" class="formInput"></textarea>
-            </p>
-            <p class="submitButton">
-                <input type="submit" value="Send" class="formSend buttonStyles" />
-            </p>
+        <form method="post" id="contact-form" autocomplete="off">
+            <div class="sectionTextDark">
+                <h2 class="logo"><span class="spacerSpan">〖</span>Contact me!<span class="spacerSpan">〗</span></h2>
+                <?php echo ((!empty($errorMessage)) ? $errorMessage : '') ?>
+            </div>
+            <label class="formLabel">Name:</label>
+            <input name="name" type="text" class="formInput" />
+            <label class="formLabel">Email Address:</label>
+            <input name="email" type="text" class="formInput" />
+            <label class="formLabel">Message:</label>
+            <textarea name="message" class="formInput"></textarea>
+            <div class="submitButton">
+                <input type="submit" value="Send" class="formSend" />
+            </div>
         </form>
 
         <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
@@ -128,6 +127,11 @@
 
 
     </div>
+
+    <footer class="sectionTextDark footerFormPage centerText">
+        <p><a class="light" href="index.php">Home</a> <a class="light" href="addLittleThing.php">Share your little things</a></p>
+        <p>&copy; <?php echo date("Y"); ?> Little Things In Life</p>
+    </footer>
 </body>
 
 </html>

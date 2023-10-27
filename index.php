@@ -38,21 +38,22 @@ $thing = mysqli_fetch_array($grabThing);
     <div class=" sectionText3">
         <h2>In our fast-paced and busy world, it's easy to overlook the small moments that bring us joy and happiness.</h2>
         <h2>Take the time to notice and appreciate the little things in life!</h2>
-        <h2>Check back every day for a new idea and positive saying, and feel free to <a href="addLittleThing.php">share</a> your own bits of happiness.</h2>
+        <h2>Check back every day for a new idea and saying, and feel free to <a href="addLittleThing.php">share</a> your own bits of happiness.</h2>
     </div>
 
     <div class="sectionTextDark">
-        <h3>Today, remember to appreciate</h3>
+        <h3>Today, let's take a moment to appreciate</h3>
         <h4><?php print $thing['thing']; ?></h4>
     </div>
 
     <div class="sectionText3">
-        <h3 class="quoteTitle">Today's Positive Quote</h3>
+        <h3 class="quoteTitle">Today's Saying</h3>
         <h4><?php print $quote['quote']; ?></h4>
     </div>
 
     <footer class="sectionTextDark">
-        <p><a class="light" href="contact.php">Contact me</a> <a class="light" href="addLittleThing.php">Add to our little things list</a> &copy; <?php echo date("Y"); ?> Little Things In Life</p>
+        <p><a class="light" href="contact.php">Contact me</a> <a class="light" href="addLittleThing.php">Share your little things</a></p>
+        <p>&copy; <?php echo date("Y"); ?> Little Things In Life</p>
     </footer>
 </body>
 
