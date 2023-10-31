@@ -192,10 +192,18 @@ img.sideLeft {
 	width: 24vw;
 }
 
+.footerFormPage {
+	margin-top: auto;
+}
+
 /*responsive screen size*/
 @media only screen and (max-width: 1300px) {
 	.logo {
-		font-size: xx-large;
+		font-size: unset;
+	}
+
+	img.bottomBorder {
+		height: auto;
 	}
 
 	.container {
@@ -211,8 +219,4 @@ img.sideLeft {
 	img.sideRight {
 		display: none;
 	}
-}
-
-.footerFormPage {
-	margin-top: auto;
 }

@@ -50,7 +50,7 @@
                 $body = join(PHP_EOL, $bodyParagraphs);
 
                 if (mail($toEmail, $emailSubject, $body, $headers)) {
-                    header('Location: index.php');
+                    header('Location: thankYouForm.php');
                 }
             } else {
                 $errorMessage = 'Oops, something went wrong. Please try again later! Or, email me directly at hello@littlethingsinlife.org';
@@ -67,13 +67,14 @@
             <div class="sectionTextDark">
                 <h2 class="logo"><span class="spacerSpan">〖</span>Share!<span class="spacerSpan">〗</span></h2>
                 <h3>What is the little thing that brought you joy today?</h3>
+                <h3>Do you have a favorite quote?</h3>
                 <?php echo ((!empty($errorMessage)) ? $errorMessage : '') ?>
             </div>
             <label class="formLabel">Name:</label>
             <input name="name" type="text" class="formInput" />
             <label class="formLabel">Email Address:</label>
             <input name="email" type="text" class="formInput" />
-            <label class="formLabel">Little Thing:</label>
+            <label class="formLabel">Share:</label>
             <textarea name="message" class="formInput"></textarea>
             <div class="submitButton">
                 <input type="submit" value="Send" class="formSend" />
@@ -131,7 +132,7 @@
 
     <footer class="sectionTextDark footerFormPage centerText">
         <p><a class="light" href="index.php">Home</a> <a class="light" href="contact.php">Contact me</a></p>
-        <p>&copy; <?php echo date("Y"); ?> Little Things In Life</p>
+        <p>&copy; <?php echo date("Y"); ?> Little Things In Life <a href="https://shirazacks.github.io/">Shira Zacks</a></p>
     </footer>
 </body>
 

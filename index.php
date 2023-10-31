@@ -23,9 +23,9 @@ if (mysqli_connect_errno()) {
     echo "Something went wrong... Please contact me to let me know you see this message!! 10 points if you are the first one!" . mysqli_connect_error();
     exit();
 }
-$grabQuote = mysqli_query($conn, 'SELECT `quote` FROM `quotes` WHERE `day` = DAYOFYEAR(CURRENT_DATE())') or die();
+$grabQuote = mysqli_query($conn, 'SELECT `quote` FROM `quotes` WHERE `day` = DAYOFYEAR(CURRENT_DATE())');
 $quote = mysqli_fetch_array($grabQuote);
-$grabThing = mysqli_query($conn, 'SELECT `thing` FROM `things` WHERE `day` = DAYOFYEAR(CURRENT_DATE())') or die();
+$grabThing = mysqli_query($conn, 'SELECT `thing` FROM `things` WHERE `day` = DAYOFYEAR(CURRENT_DATE())');
 $thing = mysqli_fetch_array($grabThing);
 ?>
 
@@ -43,17 +43,17 @@ $thing = mysqli_fetch_array($grabThing);
 
     <div class="sectionTextDark">
         <h3>Today, let's take a moment to appreciate</h3>
-        <h4><?php print $thing['thing']; ?></h4>
+        <h3><?php print $thing['thing']; ?></h3>
     </div>
 
     <div class="sectionText3">
         <h3 class="quoteTitle">Today's Saying</h3>
-        <h4><?php print $quote['quote']; ?></h4>
+        <h3><?php print $quote['quote']; ?></h3>
     </div>
 
     <footer class="sectionTextDark">
         <p><a class="light" href="contact.php">Contact me</a> <a class="light" href="addLittleThing.php">Share your little things</a></p>
-        <p>&copy; <?php echo date("Y"); ?> Little Things In Life</p>
+        <p>&copy; <?php echo date("Y"); ?> Little Things In Life <a href="https://shirazacks.github.io/">Shira Zacks</a></p>
     </footer>
 </body>
 
