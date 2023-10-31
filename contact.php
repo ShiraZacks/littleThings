@@ -11,6 +11,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Della+Respira&family=Fondamento&family=Macondo&family=Satisfy&display=swap" rel="stylesheet">
     <script defer type="text/javascript" charset="utf-8" src="script.js?<?= time() ?>"></script>
     <link rel="icon" type="image/png" href="icons/happiness.png">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script>
+        function onSubmit(token) {
+            document.getElementById("contact-form").submit();
+        }
+    </script>
 </head>
 
 <body>
@@ -76,7 +82,7 @@
             <label class="formLabel">Message:</label>
             <textarea name="message" class="formInput"></textarea>
             <div class="submitButton">
-                <input type="submit" value="Send" class="formSend" />
+                <button class="g-recaptcha formSend" data-sitekey="6LfMjOUoAAAAAE1SOxDr_3WCRu1YF-qsk_c-Pffy" data-callback='onSubmit' type="submit" value="Send" onclick="alert('Message recieved! Thanks!')">Send</button>
             </div>
         </form>
 
