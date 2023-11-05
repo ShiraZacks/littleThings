@@ -15,6 +15,7 @@
     <script>
         function onSubmit(token) {
             document.getElementById("contact-form").submit();
+            document.location.href = 'thankYouForm.php';
         }
     </script>
 </head>
@@ -83,7 +84,7 @@
             <label class="formLabel">Share:</label>
             <textarea name="message" class="formInput"></textarea>
             <div class="submitButton">
-                <button class="g-recaptcha formSend" data-sitekey="6LfMjOUoAAAAAE1SOxDr_3WCRu1YF-qsk_c-Pffy" data-callback='onSubmit' type="submit" value="Send" onclick="alert('Message recieved! Thanks!')">Send</button>
+                <button class="g-recaptcha formSend" data-sitekey="6LfMjOUoAAAAAE1SOxDr_3WCRu1YF-qsk_c-Pffy" data-callback='onSubmit' type="submit" value="Send">Send</button>
             </div>
         </form>
 
