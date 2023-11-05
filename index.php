@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Life doesn't need to be perfect to be wonderful! Take the time to appreciate the little things in life. Check us out for a quote of the day and a little thing to appreciate!">
+    <meta name=”robots” content="index, nofollow">
+    <meta name="title" content="Little Things in Life">
     <title>Little Things</title>
     <link rel="stylesheet" type="text/css" href="style.css?<?= time() ?>" />
     <link rel="preconnect" href="https://fonts.googleapis.com">

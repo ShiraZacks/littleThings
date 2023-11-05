@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Little Things</title>
+    <meta name="description" content="It's the little things that make life worth living! Take the time to appreciate the little things in life. Share your little things with me!">
+    <meta name="title" content="Little Things in Life || Share">
+    <title>Little Things || Share</title>
     <link rel="stylesheet" type="text/css" href="style.css?<?= time() ?>" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
