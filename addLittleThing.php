@@ -17,7 +17,9 @@
     <script>
         function onSubmit(token) {
             document.getElementById("contact-form").submit();
-            document.location.href = 'thankYouForm.php';
+
+            conole.log('submitted')
+            // document.location.href = 'thankYouForm.php';
         }
     </script>
 </head>
@@ -58,19 +60,21 @@
                 $bodyParagraphs = ["Name: {$name}", "Email: {$email}", "Message:", $message];
                 $body = join(PHP_EOL, $bodyParagraphs);
 
-                if (mail($toEmail, $emailSubject, $body, $headers)) {
-                    header('Location: thankYouForm.php');
-                }
-            } else {
-                $errorMessage = 'Oops, something went wrong. Please try again later! Or, email me directly at hello@littlethingsinlife.org';
-            }
-        } else {
+                if (mail($toEmail, $emailSubject, $body, $headers)) { ?>
+                    <script>
+                        document.location.href = 'thankYouForm.php';
+                    </script><?php
+                            }
+                        } else {
+                            $errorMessage = 'Oops, something went wrong. Please try again later! Or, email me directly at hello@littlethingsinlife.org';
+                        }
+                    } else {
 
-            $allErrors = join('<br/>', $errors);
-            $errorMessage = "<p style='color: red;'>{$allErrors}</p>";
-        }
+                        $allErrors = join('<br/>', $errors);
+                        $errorMessage = "<p style='color: red;'>{$allErrors}</p>";
+                    }
 
-        ?>
+                                ?>
 
         <form method="post" id="contact-form" autocomplete="off">
             <div class="sectionTextDark">
